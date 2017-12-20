@@ -37,10 +37,12 @@ You should run ``rapyd`` within your project directory as the parent directory n
 .. code-block:: bash
 
 	cd a_project
-	rapyd manage.py migrate
+	rapyd ./manage.py migrate
 
 
 The above command would execute ``manage.py migrate`` within the docker container named ``aproject_web_1``. The name is derived from what ``docker-compose`` would name a service called ``web``.
+
+The virtual environment will be activated automatically, so you do not need to do it.
 
 
 Todo

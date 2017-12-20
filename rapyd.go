@@ -16,25 +16,15 @@ func main() {
 	script := "source /venv/bin/activate && " + subCommand
 	cwd, _ := os.Getwd()
 	container := path.Base(cwd) + "_web_1"
-	// args := []string{
-	// 	"docker",
-	// 	"exec",
-	// 	"-it",
-	// 	container,
-	// 	"/bin/sh",
-	// 	"-c",
-	// 	script,
-	// }
-	// fmt.Printf("What? %s", args)
-	cmd := exec.Command(
-		"docker",
+	args := []string{
 		"exec",
 		"-it",
 		container,
 		"/bin/sh",
 		"-c",
 		script,
-	)
+	}
+	cmd := exec.Command("docker", args...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	cmd.Stdin = os.Stdin
