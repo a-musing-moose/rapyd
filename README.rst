@@ -45,7 +45,8 @@ The above command would execute ``manage.py migrate`` within the docker containe
 The virtual environment will be activated automatically, so you do not need to do it.
 
 
-Todo
-----
+Brain Dump Log
+--------------
 
-The way in which the container name is determined is pretty crappy, something smarter should be used. Whether it is a config (ini) file, command line switch doesn't really matter. Just needs to be a bit smarter. Perhaps leaving the current approach as a fallback.
+2017-12-20:
+    The way in which the container name is determined is pretty crappy, something smarter should be used. Whether it is a config (ini) file, command line switch doesn't really matter. Just needs to be a bit smarter. Perhaps leaving the current approach as a fallback.
