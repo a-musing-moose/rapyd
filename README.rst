@@ -1,6 +1,8 @@
 rapyd - Run A Python in Docker
 =============================
 
+DEPRECATED - See: https://github.com/a-musing-moose/rind for an alternative
+
 ``rapyd`` is a simple CLI to make developing using docker easier. It helps solve the problem of running one off tasks inside existing containers. For example, you entire Django development environment it defined in a docker-compose file and you wish to run management tasks.
 
 Building
